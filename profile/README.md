@@ -7,8 +7,6 @@ This GitHub Organization hosts all repositories for **CS 495: Capstone Computing
 ### .github
 - Contains organization‑level documentation and the overview README for the entire project
 
----
-
 ###  Next-Web-App
 - Houses the front‑end for the user interface.
 
@@ -17,8 +15,6 @@ This GitHub Organization hosts all repositories for **CS 495: Capstone Computing
   - GridStack for widget-based dashboards
 - Tailwind CSS
 - AWS Hosting (Amplify)
-
----
 
 ###  Next-Web-App-Backend
 - Contains the back‑end services, including APIs and database integrations used by the front‑end
@@ -31,14 +27,13 @@ This GitHub Organization hosts all repositories for **CS 495: Capstone Computing
 - **Mangum** (ASGI adapter for Lambda)
 - **Amazon Cognito** (JWT authentication)
 
----
-
 ### Project-Website
 - A simple React web app providing:
   - Project overview  
   - Course deliverables  
   - Team bios   
 
+---
 
 ## Main Collaborators
 - Ryan Kutella  
@@ -46,7 +41,6 @@ This GitHub Organization hosts all repositories for **CS 495: Capstone Computing
 - Maddox Guthrie  
 - Kaitlyn Hanson  
 
----
 
 ## Cybersecurity Team
 - Madeline Moore  
