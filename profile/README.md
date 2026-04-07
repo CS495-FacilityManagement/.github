@@ -1,27 +1,53 @@
-# CS 495-Facility Management 
-This Github Organization connects the necessary repos for CS 495: Capstone Computing for the AI Facilities Management Team. 
+# CS 495 — Facility Management
 
-## Front-End Tech Stack
-- Next.js (Typescript)
-    - GridStack for widgets
+This GitHub Organization hosts all repositories for **CS 495: Capstone Computing Facilities Management Team**. It centralizes the front‑end, back‑end, documentation, and supporting materials developed throughout the semester.
+
+## Repository Descriptions
+
+### .github
+- Contains organization‑level documentation and the overview README for the entire project
+
+---
+
+###  Next-Web-App
+- Houses the front‑end for the user interface.
+
+#### **Front-End Tech Stack**
+- Next.js (TypeScript)
+  - GridStack for widget-based dashboards
 - Tailwind CSS
-- Hosted through AWS
+- AWS Hosting (Amplify)
 
-## Back-End Tech Stack
-- Python (FastAPI)
-- PostgreSQL (Amazon RDS)
-- AWS Lambda
-- API Gateway (HTTP API)
-- Mangum (ASGI adapter for Lambda)
-- Amazon Cognito (JWT authentication)
+---
+
+###  Next-Web-App-Backend
+- Contains the back‑end services, including APIs and database integrations used by the front‑end
+
+#### Back-End Tech Stack
+- **Python** (FastAPI)
+- **PostgreSQL** (Amazon RDS)
+- **AWS Lambda**
+- **API Gateway** (HTTP API)
+- **Mangum** (ASGI adapter for Lambda)
+- **Amazon Cognito** (JWT authentication)
+
+---
+
+### Project-Website
+- A simple React web app providing:
+  - Project overview  
+  - Course deliverables  
+  - Team bios   
 
 
 ## Main Collaborators
-- Ryan Kutella
-- Jaden Sheppard
-- Maddox Guthrie
-- Kaitlyn Hanson
+- Ryan Kutella  
+- Jaden Sheppard  
+- Maddox Guthrie  
+- Kaitlyn Hanson  
+
+---
 
 ## Cybersecurity Team
-- Madeline Moore
-- Luca Jontz
+- Madeline Moore  
+- Luca Jontz  
