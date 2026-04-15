@@ -1,40 +1,90 @@
-written by Kaitlyn Hanson
 
-How to use each completed feature 
+# Facility Management Platform User Guide
+  
 
-- List of features and how to use them (Should link to sprint features in the project)
+## Navigating the Platform
 
-- Document results of each function and how they link to other functions 
+All available pages can be accessed through the dropdown menu in the upper‑right corner of the platform. 
+Some pages are public, while others require a logged‑in user.
 
-Ex: "placed orders that have not been fulfilled can be viewed on the in process screen"..."there are three types of user accounts"
+### **Public Pages**
 
-- How are external resources incorporated?
+-  **Login / Main Landing Page** — The first page you see when visiting the site
+-  **Create Facility** — Create a facility and administrator account
 
-Navigating the Platform: 
-All available pages can be found in drop down menu in the upper right corner of the platform. Certain pages are protected and can only be seen when a user is logged in. 
-Pages Include: 
-    Login/Main Landing Page: this is the first page you see when you navigate to our site
-    Create Facility: create a facility & account 
-    Dashboard: the main page, overview of facility details
-    Assets: detailed but easy to view page of all the assets in the facility
-    Reports: view or export weekly facility health reports, asset health reports, and maintenance reports
-    Maintenance: create, view, edit, or delete asset work orders 
-    Facility: manage buildings, assets, and people within the facility
-    Profile: manage personal information and change user password
+### **Protected Pages**
+-  **Dashboard** — Overview of facility details and customizable widgets
+-  **Assets** — Detailed, easy‑to‑navigate list of all facility assets
+-  **Reports** — View or export weekly facility health, asset health, and maintenance reports
+-  **Maintenance** — Create, view, edit, or delete asset work orders
+-  **Facility** — Manage buildings, assets, and users within the facility
+-  **Profile** — Manage personal information and update your password
 
-Creating an Account: 
-1. Once you navigate to the site, the main page allows a user to log in or create a new account. 
-2. Under the log in block or through the upper right drop down menu, click on "Create Facility". 
-3. Once on the Create Facility page, input the information for your facility and your name and email. 
-    3a. You will receive a temporary password sent to the email you provided. 
-    3b. You may have to check your email's junk folder, but find and copy the temporary password. 
-4. Navigate back to the main page by clicking Log in at the bottom of the "Create Facility" page, clicking Login in the upper right drop down, or by clicking the logo in the top left corner of the page. 
-5. Input your login information- the email you provided and the temporary password - and click the log in button. 
-6. You will now be prompted to create a unique password. 
 
-Editing the User Dashboard: 
-1. Once you are logged into your account, the first page you see if the user dashboard with all available widgets. These widgets provide important information about your facility. 
-2. To move the widgets, move the cursor over the widget header, click and hold the left mouse button, and drag the widget wherever you want it to stay. 
-3. To delete widgets, you must first start dragging them. A red "Drag here to delete" box will appear. Simply drag the widget into the box, release the mouse, and the widget will be removed from the dashboard. 
-4. To add widgets, select the desired widget from the drop down in the upper left side of the dashboard, click the "Add Widget" button, then refresh the page. 
-5. To resize widgets, hover the cursor over the desired widget and click, hold, and drag the arrows on the outer corners up or down to change the size of the widget. 
+## Creating an Account
+ 1. On the main page, choose **Log In** or **Create Facility**.
+ 2. Click **Create Facility** (either under the login block or in the upper‑right dropdown).
+	 a. On the Create Facility page, enter your facility information, name, and email. 
+	 b. A temporary password will be sent to the email you provided. 
+	 c. Check your junk folder if you don’t see it.
+3. Return to the main page by clicking **Log In**, using the dropdown, or clicking the logo.
+4. Log in using your email and temporary password.
+5. You will be prompted to create a new, unique password.
+
+## User Dashboard Widgets
+1. After logging in, you will land on the dashboard with all available widgets showing.
+2.  **Move widgets:** Click and hold the widget header, then drag it to a new location.
+3.  **Delete widgets:** Start dragging a widget to reveal the red **"Drag Here to Delete"** area. Drop it there.
+4.  **Add widgets:**
+	a. Select a widget from the dropdown on the upper‑left of the dashboard.
+	b. Click **Add Widget**.
+	c. Refresh the page.
+5. **Resize widgets:** Hover over a widget and drag the corner arrows to adjust its size.
+
+## Assets
+1. Open the **Assets** page from the dropdown or hamburger menu.
+2. Assets are grouped alphabetically by **Type**.
+3. Scroll to the bottom of the page to view the condensed asset table.
+4. Use the building filter (top‑right of the table) to narrow results.
+5. To add an asset, click **Add Asset** (top‑right of the table).
+	a. Select the building, asset type, serial number, expected life, and install date. Other fields are optional.
+	b. Click **Add Asset** or **Cancel**.
+
+## Reports
+1. Navigate to **Reports** using the dropdown or hamburger menu.
+2. The Reports page contains weekly auto‑generated reports on: Facility Health, Asset Condition & Work Orders
+3. Click **View** to open a report.
+4. Click **Export** to download or print a report.
+  
+## Maintenance  
+
+1. Navigate to **Maintenance** using the dropdown or hamburger menu.
+2. Open work orders appear under **Current Work Orders**.
+3. To create a new work order, click **Add Work Order**.
+	a. Select the asset requiring maintenance.
+	b.  Enter a description, priority, due date, and assigned user.
+	c. Click **Create**.
+
+## Facility Management
+
+1. Navigate to **Facility** using the dropdown or hamburger menu.
+2. The **Buildings** section lists all active buildings.
+	a. Add a building by entering a name and clicking **Add**.
+	b. Edit a building by clicking **Edit**.
+	c. Delete a building by clicking **Delete**.
+3. The **Users** section lists all active users in the facility.
+	a. Click **Invite User** to add a new user.
+	b. Cancel by clicking **Close Invite** or **Cancel**.
+	c. Enter the user’s name, email, and role, then click **Send Invite**.
+
+## Profile
+1. Navigate to **Profile** using the dropdown or hamburger menu.
+2. **Editing Personal Information**
+	a. Add, change, or remove a profile photo using the buttons provided.
+	b. Update your username by editing the **Name** field.
+3. Click **Save Profile** to apply changes.
+
+  
+4. **Change Password**
+	a. Enter your current password, new password, then confirm the new password.
+	b. Click **Update Password** to save.
