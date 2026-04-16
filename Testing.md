@@ -1,4 +1,4 @@
-# Testing
+# Testing Documentation for Facility Management API
 
 ## Components / Services Tested
 
@@ -23,41 +23,62 @@ The following backend components will be tested:
 
 ### 1. Facility Creation
 - Created a facility using POST `/api/facilities`
-- Verified:
-  - Facility persisted in database
-  - User assigned as "Facility Manager"
+
+Expected:
+- Facility is created and stored in database
+- User assigned as "Facility Manager"
+
+Actual:
+- Facility successfully created and returned in response
+
+![Facility Creation](./images/facility-create.png)
 
 ---
 
-### 2. Authorization Enforcement
-- Attempted restricted routes as non-manager users
-- Expected result:
-  - 403 Forbidden response
+### 2. Token Enforcement
+- Attempted protected route without a JWT token
+
+Expected:
+- 401 unauthorized
+
+Actual:
+- API returned 401 with appropriate error message
+
+![Authorization Error](./images/unauth.png)
 
 ---
-
 ### 3. Asset Creation & Risk Calculation
 - Created assets with different install dates
-- Verified:
-  - Criticality assigned based on asset type
-  - Risk score increases with asset age
-  - Assets past expected life marked as "Critical"
+
+Verified:
+- Criticality assigned based on asset type
+- Risk score increases with asset age
+- Assets past expected life marked as "Critical"
+
+![Asset Risk Results](./images/GetFacilityAssets.png)
 
 ---
-
 ### 4. Maintenance Lifecycle
 - Created work order via POST `/api/maintenance`
 - Completed work order via PUT `/api/maintenance/{id}/complete`
-- Verified:
-  - Status transitions from OPEN → COMPLETE
-  - `completed_at` timestamp is set
+
+Verified:
+- Status transitions from OPEN → COMPLETE
+- `completed_at` timestamp is set
+
+![Work Order Open](./images/MaintenanceCreate.png)
 
 ---
+### 5. Building Creation
+- Created a building using POST `/api/facilities/{facility_id}/buildings`
 
-### 5. Maintenance Impact on Risk
-- Compared asset risk before and after maintenance
-- Verified:
-  - Recent maintenance reduces risk score
+Expected:
+- Building is created and linked to the correct facility
+
+Actual:
+- Building successfully created and returned in response
+
+![Building Creation](./images/createb.png)
 
 ---
 
@@ -71,6 +92,14 @@ The following backend components will be tested:
 
 ---
 
+## Test Coverage Summary
+
+- All core services tested (Facilities, Buildings, Assets, Maintenance)
+- Authorization validated across multiple roles
+- Risk calculation verified under multiple conditions
+- Edge cases handled (duplicate users, unauthorized access)
+
+---
 ## Test Scripts / Execution
 
 Testing was performed manually using API tools:
@@ -85,3 +114,11 @@ Testing was performed manually using API tools:
 curl -X GET \
   "https://<api-url>/api/assets?facility_id=1" \
   -H "Authorization: Bearer <jwt_token>"
+
+```
+
+### Other Pictures
+
+![Dashboard](./images/dashboard.png)
+![Dashboard Endpoint](./images/Dashboardforfacility.png)
+![jwt partial](./images/jwt.png)
