@@ -6,6 +6,12 @@ This GitHub Organization hosts all repositories for **CS 495: Capstone Computing
 
 ### .github
 - Contains organization‑level documentation and the overview README for the entire project
+#### Documentation
+- Database Guide: Discription of database tables, functions, and relationships
+- Development Guide: Intructions on how to setup development tools
+- Lambda Guide: Description of how the Lambda APIs work
+- Testing: Use Case testing 
+- User Guide: functionality in the final product
 
 ###  Next-Web-App
 - Houses the front‑end for the user interface.
